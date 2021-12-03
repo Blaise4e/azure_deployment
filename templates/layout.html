@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> {{ title }} </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <img src="https://purepng.com/public/uploads/large/purepng.com-blood-pressure-monitorobjectsblood-pressure-monitormedicine-hospital-monitor-tool-object-meter-medical-health-equipment-check-631522325467qrjnz.png" alt="fond" width="100%">
+      </div>
+      {% block content %}
+      
+      {% endblock %}
+    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form action="/result" method="post" enctype="multipart/form-data">
+    <h1> Classification </h1>
+    <div class="info">
+      <input type= "file" name="image" id="image"  accept=".jpeg, .png" multiple> 
+    <button type="submit">Estimate</button>
+  </form>
+
+{% endblock %}
